@@ -1,0 +1,634 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/cloudysky.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 100%;
+    overflow: hidden;
+    /*    background-image: url("../img/cloudysky.jpg");*/
+/*    box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .7);*/
+
+}
+
+.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+#left {
+    width: 55%;
+    padding: 10vmin;
+    height: 100%;
+}
+
+#location {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    font-size: 6vmin;
+    float: left;
+    font-weight: 300;
+}
+
+.low {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    font-size: 6vmin;
+    display: inline-block;
+    float: right;
+    /*    padding-right: 6vw;*/
+}
+
+#weathertype {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 25vmin;
+    color: rgba(255, 255, 255, 0.7);
+    /*    line-height: 120%;*/
+}
+
+#temp {
+    font-family: 'Fjalla One', sans-serif;
+    color: #f1ce2a;
+    font-size: 12vmin;
+}
+
+#details {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    font-size: 4vmin;
+    font-weight: 300;
+    line-height: 100%;
+}
+
+#row {
+    height: 100%;
+}
+
+#row3 {
+    margin-top: -6vmin;
+}
+
+#right {
+    background-color: rgba(2, 172, 234, .5);
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45%;
+    height: 100%;
+    padding: 16vmin;
+}
+
+#icon > img {
+    fill: white;
+    width: 8vmin;
+    display: inline-block;
+    float: left;
+}
+
+#row-right {
+    border-bottom: thin solid white;
+    padding-bottom: 4vmin;
+    padding-top: 4vmin;
+}
+
+#day {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    color: white;
+    display: inline-block;
+    font-size: 4vmin;
+    padding-left: 2vmin;
+    margin-top: 1vmin;
+}
+
+#hilo {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    color: white;
+    display: inline-block;
+    font-size: 4vmin;
+    float: right;
+    margin-top: 1vmin;
+}
+
+
+@media (min-width: 0px) and (max-width: 384px) and (min-height: 0px) and (max-height: 270px) {
+    #right {
+        display: none;
+    }
+    #left {
+        width: 100%;
+        padding: 15vmin;
+    }
+    #row4 {
+        display: none;
+    }
+    #location{
+        font-size: 10vmin;
+    }
+    .low{
+        font-size: 10vmin;
+    }
+    #temp{
+        font-size: 15vmin;
+    }
+    #details{
+        display: none;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 384px) and (min-height: 271px) and (max-height: 540px) {
+    #right {
+        display: none;
+    }
+    #left {
+        width: 100%;
+        padding: 17vmin;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 384px) and (min-height: 541px) and (max-height: 810px) {
+    #right {
+        display: none;
+    }
+    #left {
+        width: 100%;
+    }
+    #weathertype {
+        font-size: 30vmin;
+    }
+    #temp {
+        font-size: 20vmin;
+    }
+    #details {
+        font-size: 8vmin;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 384px) and (min-height: 811px) and (max-height: 1080px) {
+    #right {
+        display: none;
+    }
+    #left {
+        width: 100%;
+    }
+    #weathertype {
+        font-size: 30vmin;
+    }
+    #temp {
+        font-size: 20vmin;
+    }
+    #details {
+        font-size: 8vmin;
+    }
+    #location {
+        font-size: 8vmin;
+    }
+    .low {
+        font-size: 8vmin;
+    }
+}
+
+@media (min-width: 385px) and (max-width: 768px) and (min-height: 0px) and (max-height: 229px) {
+    #location{
+        font-size: 10vmin;
+    }
+    #weathertype{
+        font-size: 30vmin;
+    }
+    #right{
+        display: none;
+    }
+    #left{
+        width: 100%;
+    }
+    .low{
+        font-size: 10vmin;
+    }
+    #details{
+        position: relative;
+        left: 200vmin;
+        bottom: 88vmin;
+        font-size: 10vmin;
+    }
+    #temp{
+        font-size: 20vmin;
+    }
+}
+
+@media (min-width: 385px) and (max-width: 768px) and (min-height: 0px) and (max-height: 270px) {
+    #row4 {
+        display: none;
+    }
+    #right {
+        padding: 9vmin;
+    }
+}
+
+@media (min-width: 385px) and (max-width: 768px) and (min-height: 271px) and (max-height: 540px) {
+    #right {
+        padding: 7vmin;
+        padding-top: 13vmin;
+    }
+    #weathertype {
+        font-size: 17vmin;
+    }
+    #day{
+        font-size: 3vmin;
+    }
+    #hilo{
+        font-size: 3vmin;
+    }
+    #right{
+            padding: 5vmin;
+    }
+    #left{
+        padding: 5vmin;
+    }
+    #location{
+        font-size: 5vmin;
+    }
+    .low{
+        font-size: 5vmin;
+    }
+    #icon > img{
+        width: 7vmin;
+    }
+}
+
+@media (min-width: 385px) and (max-width: 768px) and (min-height: 541px) and (max-height: 810px) {
+    #weathertype {
+        font-size: 17vmin;
+    }
+    #left {
+        padding: 6vmin;
+    }
+    #location {
+        font-size: 4vmin;
+    }
+    .low {
+        font-size: 4vmin;
+    }
+    #right {
+        padding: 5vmin;
+        padding-top: 10vmin;
+    }
+    #icon > img {
+        width: 5vmin;
+    }
+    #day {
+        font-size: 3vmin;
+    }
+    #hilo {
+        font-size: 3vmin;
+    }
+}
+
+@media (min-width: 385px) and (max-width: 768px) and (min-height: 811px) and (max-height: 1080px) {
+    #weathertype {
+        font-size: 15vmin;
+    }
+    #temp{
+        font-size: 10vmin;
+    }
+    #details{
+        font-size: 3vmin;
+    }
+    #left {
+        padding: 6vmin;
+        width: 100%;
+        height: 53%;
+    }
+    #location {
+        font-size: 4vmin;
+    }
+    .low {
+        font-size: 4vmin;
+    }
+    #right {
+        padding: 5vmin;
+        height: 47%;
+        width: 100%;
+        position: initial;
+        padding-top: 5vmin
+    }
+    #row-right{
+        padding-bottom: 1vmin;
+    }
+    #icon > img {
+        width: 5vmin;
+    }
+    #day {
+        font-size: 3vmin;
+    }
+    #hilo {
+        font-size: 3vmin;
+    }
+    
+}
+@media (min-width: 769px) and (max-width: 1152px) and (min-height: 0px) and (max-height: 229px) {
+    #location{
+        font-size: 10vmin;
+    }
+    #weathertype{
+        font-size: 30vmin;
+    }
+    #right{
+        display: none;
+    }
+    #left{
+        width: 100%;
+    }
+    .low{
+        font-size: 10vmin;
+    }
+    #details{
+        position: relative;
+        left: 200vmin;
+        bottom: 88vmin;
+        font-size: 10vmin;
+    }
+    #temp{
+        font-size: 20vmin;
+    }
+}
+@media (min-width: 769px) and (max-width: 1152px) and (min-height: 230px) and (max-height: 270px) {
+    #row4 {
+        display: none;
+    }
+    #location {
+        font-size: 8vmin;
+    }
+    .low {
+        font-size: 8vmin;
+    }
+    #weathertype {
+        font-size: 30vmin;
+    }
+    #temp {
+        font-size: 20vmin;
+    }
+    #right {
+        padding: 8vmin;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1152px) and (min-height: 271px) and (max-height: 540px) {
+    #right{
+        padding: 12vmin;
+    }
+    #details{
+        display: none;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1152px) and (min-height: 541px) and (max-height: 810px) {
+    #right {
+        padding: 4vmin;
+        padding-top: 13vmin;
+    }
+    #left{
+        padding: 5vmin;
+    }
+    #weathertype{
+        font-size: 17vmin;
+    }
+    #location{
+        font-size: 5vmin;
+    }
+    .low{
+        font-size: 5vmin;
+    }
+    #day{
+        font-size: 3vmin;
+    }
+    #hilo{
+        font-size: 3vmin;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1152px) and (min-height: 811px) and (max-height: 1080px) {
+    #right {
+        padding: 3vmin;
+        padding-top: 15vmin;
+    }
+    #weathertype {
+        font-size: 17vmin;
+    }
+    #location {
+        font-size: 4vmin;
+    }
+    .low {
+        font-size: 4vmin;
+    }
+    #row3 {
+        margin-top: -3vmin;
+    }
+    #icon > img {
+        width: 6vmin;
+        padding-top: 1vmin;
+    }
+    #day {
+        font-size: 3vmin;
+    }
+    #hilo {
+        font-size: 3vmin;
+    }
+    #left {
+        padding: 5vmin;
+    }
+}
+@media (min-width: 1153px) and (max-width: 1536px) and (min-height: 0px) and (max-height: 199px) {
+    #location{
+        font-size: 10vmin;
+    }
+    #weathertype{
+        font-size: 30vmin;
+    }
+    #right{
+        display: none;
+    }
+    #left{
+        width: 100%;
+    }
+    .low{
+        font-size: 10vmin;
+    }
+    #details{
+        position: relative;
+        left: 200vmin;
+        bottom: 88vmin;
+        font-size: 10vmin;
+    }
+    #temp{
+        font-size: 20vmin;
+    }
+}
+@media (min-width: 1153px) and (max-width: 1536px) and (min-height: 200px) and (max-height: 270px) {
+    #location {
+        font-size: 10vmin;
+    }
+    .low {
+        font-size: 10vmin;
+    }
+    #weathertype {
+        font-size: 30vmin;
+    }
+    #temp {
+        font-size: 20vmin;
+    }
+    #details {
+        font-size: 8vmin;
+        position: relative;
+        left: 100vmin;
+        bottom: 66vmin;
+    }
+    #right {
+        padding: 10vmin;
+    }
+    #row-right {
+        padding-bottom: 1vmin;
+    }
+    #icon > img {
+        padding-top: 1vmin;
+    }
+    #day {
+        font-size: 6vmin;
+    }
+    #hilo {
+        font-size: 6vmin;
+    }
+}
+
+@media (min-width: 1153px) and (max-width: 1536px) and (min-height: 271px) and (max-height: 540px) {
+    #weathertype {
+        font-size: 20vmin;
+    }
+    #details{
+        display: none;
+    }
+}
+
+@media (min-width: 1153px) and (max-width: 1536px) and (min-height: 541px) and (max-height: 810px) {
+    #right{
+        padding: 12vmin;
+
+    }
+}
+
+@media (min-width: 1153px) and (max-width: 1536px) and (min-height: 811px) and (max-height: 1080px) {
+    #right {
+        padding: 3vmin;
+        padding-top: 15vmin;
+    }
+    #left {
+        padding: 6vmin;
+    }
+    #weathertype {
+        font-size: 20vmin;
+    }
+    #location {
+        font-size: 5vmin;
+    }
+    .low {
+        font-size: 5vmin;
+    }
+}
+
+@media (min-width: 1537px) and (max-width: 1920px) and (min-height: 0px) and (max-height: 199px) {
+    #location{
+        font-size: 10vmin;
+    }
+    #weathertype{
+        font-size: 30vmin;
+    }
+    #right{
+        display: none;
+    }
+    #left{
+        width: 100%;
+    }
+    .low{
+        font-size: 10vmin;
+    }
+    #details{
+        position: relative;
+        left: 200vmin;
+        bottom: 88vmin;
+        font-size: 10vmin;
+    }
+    #temp{
+        font-size: 20vmin;
+    }
+}
+
+@media (min-width: 1537px) and (max-width: 1920px) and (min-height: 200px) and (max-height: 270px) {
+    #location {
+        font-size: 10vmin;
+    }
+    .low {
+        font-size: 10vmin;
+    }
+    #weathertype {
+        font-size: 30vmin;
+    }
+    #temp {
+        font-size: 20vmin;
+    }
+    #details {
+        font-size: 8vmin;
+        position: relative;
+        left: 100vmin;
+        bottom: 66vmin;
+    }
+    #right {
+        padding: 10vmin;
+    }
+    #row-right {
+        padding-bottom: 1vmin;
+    }
+    #icon > img {
+        padding-top: 1vmin;
+    }
+    #day {
+        font-size: 6vmin;
+    }
+    #hilo {
+        font-size: 6vmin;
+    }
+}
+
+@media (min-width: 1537px) and (max-width: 1920px) and (min-height: 271px) and (max-height: 540px) {
+    #right {
+        padding: 13vmin;
+    }
+    #row2 {
+        line-height: 32vmin;
+    }
+    #details{
+        display: none;
+    }
+}
+
+@media (min-width: 1537px) and (max-width: 1920px) and (min-height: 541px) and (max-height: 810px) {
+    #weathertype {
+        font-size: 23vmin;
+    }
+    #right {
+        padding: 14vmin;
+    }
+}
+
+@media (min-width: 1537px) and (max-width: 1920px) and (min-height: 811px) and (max-height: 1080px) {
+    #right {
+        padding: 10vmin;
+    }
+}

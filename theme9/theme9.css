@@ -1,0 +1,257 @@
+html {
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+    height: 100%;
+}
+
+.container {
+    /*    background-image: url("../img/vectormountain.png");*/
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/vectormountain.png");
+    background-size: 170% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vmin;
+    width: 100vmin;
+    border-radius: 50%;
+}
+
+.state {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 3vmin;
+    color: white;
+    text-align: center;
+    line-height: normal;
+    padding-top: 3vmin;
+}
+
+.city {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 4vmin;
+    color: white;
+    text-align: center;
+    line-height: normal;
+}
+
+.main-temp {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 10vmin;
+    color: yellow;
+    text-align: center;
+    line-height: 10vmin;
+}
+
+.hilo {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 3vmin;
+    color: white;
+    text-align: center;
+    line-height: normal;
+}
+
+.description {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 4vmin;
+    color: white;
+    text-align: center;
+    line-height: normal;
+}
+
+.weather-icon {
+    width: 7vmin;
+    min-height: 10vmin;
+}
+
+.day {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 3vmin;
+    color: white;
+}
+
+#tuesday {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+}
+
+#wednesday {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+}
+
+#thursday {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+}
+
+#friday {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 15%;
+}
+
+.detail-icon {
+    width: 4vmin;
+    min-height: 5vmin;
+}
+
+.detail-text {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 3vmin;
+    color: white;
+}
+
+#top {
+    height: 33vmin;
+}
+
+#middle {
+    height: 33vmin;
+    padding-top: 7vmin;
+}
+
+#bottom {
+    width: 100vmin;
+    height: 33vmin;
+}
+
+
+/*
+#bottom::after {
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-image: url("../img/Crescent.svg");
+    background-size: 170% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: .6;
+    z-index: 5;
+}
+*/
+
+#pressure {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+    left: 5vmin;
+}
+
+#visibility {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 19%;
+    top: 16vmin;
+}
+
+#humidity {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 18%;
+    top: 22vmin;
+    left: 1vmin;
+}
+
+#precipitation {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 18%;
+    top: 16vmin;
+    left: 3vmin;
+}
+
+#windspeed {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 18%;
+    left: 0vmin;
+}
+
+
+/*
+#moon{
+    position: absolute;
+    z-index: 5;
+}
+*/
+
+@media (max-width: 994px) and (min-width: 0px) {
+    .container {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+@media (max-width: 300px) and (min-width: 0px) {
+    #middle {
+        display: none;
+    }
+    #bottom {
+        display: none;
+    }
+    #top{
+            padding-top: 14vmin;
+    }
+    .state{
+        font-size: 5vmin;
+    }
+    .city{
+        font-size: 7vmin;
+    }
+    .main-temp{
+        font-size: 15vmin;
+        line-height: initial;
+    }
+    .hilo{
+        font-size: 5vmin;
+    }
+    .description{
+        font-size: 7vmin;
+    }
+}
+
+@media (max-height: 300px) and (min-height: 0px) {
+    #middle {
+        display: none;
+    }
+    #bottom {
+        display: none;
+    }
+    #top{
+            padding-top: 14vmin;
+    }
+    .state{
+        font-size: 5vmin;
+    }
+    .city{
+        font-size: 7vmin;
+    }
+    .main-temp{
+        font-size: 15vmin;
+        line-height: initial;
+    }
+    .hilo{
+        font-size: 5vmin;
+    }
+    .description{
+        font-size: 7vmin;
+    }
+}

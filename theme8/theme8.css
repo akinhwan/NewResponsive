@@ -1,0 +1,266 @@
+html {
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+    height: 100%;
+}
+
+.container {
+    /*
+    height: 100%;
+    width: 50%;
+*/
+    height: 100vmin;
+    width: 100vmin;
+    border-radius: 50%;
+    background-color: #62bfe0;
+}
+
+#ring-top {
+    height: 50vmin;
+}
+
+.state {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 3vmin;
+    color: white;
+    text-align: center;
+        margin-bottom: 0;
+}
+
+.city {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 6vmin;
+    color: white;
+    line-height: 6vmin;
+}
+
+#center {
+    background-image: url('../img/chinesecloud.png');
+    background-repeat: no-repeat;
+    background-size: 109% 109%;
+    background-position: 34%, 0%;
+    height: 100vmin;
+    width: 100vmin;
+    border-radius: 50%;
+    position: absolute;
+    top: 0%;
+    transform: scale(.60);
+}
+
+.main-temp {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 22vmin;
+    color: #c92116;
+    position: absolute;
+    left: 32%;
+    top: 27%;
+}
+
+.hilo {
+    color: #48484a;
+    font-size: 10vmin;
+    position: absolute;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 600;
+    left: 30%;
+    top: 58%;
+}
+
+#tuesday {
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    position: relative;
+    top: 30vmin;
+    left: 1vmin;
+}
+
+#wednesday {
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    position: relative;
+    top: 11vmin;
+    right: 7vmin;
+}
+
+#thursday {
+    display: inline-block;
+    width: 18%;
+    text-align: center;
+    position: relative;
+    top: 11vmin;
+    left: 7vmin;
+}
+
+#friday {
+    display: inline-block;
+    width: 15%;
+    text-align: center;
+    position: relative;
+    top: 30vmin;
+    left: 2vmin;
+}
+
+.weather-icon {
+    width: 6vmin;
+}
+
+.day {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 4vmin;
+    color: white;
+}
+
+.daily-hilo {
+    font-size: 2vmin;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+}
+
+#ring-bot {
+    height: 50vh;
+}
+
+.detail-icon {
+    width: 5vmin;
+}
+
+.detail-text {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 4vmin;
+    color: white;
+}
+
+#windspeed {
+    display: inline-block;
+    width: 15%;
+    text-align: center;
+    position: relative;
+    top: 6vmin;
+    left: 5vmin;
+}
+
+#precipitation {
+    display: inline-block;
+    width: 15%;
+    text-align: center;
+    position: relative;
+    top: 26vmin;
+    left: 4vmin;
+}
+
+#pressure {
+    display: inline-block;
+    width: 15%;
+    text-align: center;
+    position: relative;
+    top: 34vmin;
+    left: 12vmin;
+}
+
+#visibility {
+    display: inline-block;
+    width: 15%;
+    text-align: center;
+    position: relative;
+    top: 26vmin;
+    left: 20vmin;
+}
+
+#humidity {
+    display: inline-block;
+    width: 15%;
+    text-align: center;
+    position: relative;
+    left: 17.5vmin;
+    top: 6vmin;
+}
+
+@media (max-width: 994px) and (min-width: 0px) {
+    .container {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+@media (max-width: 300px) and (min-width: 0px) {
+    #ring-top {
+        display: none;
+    }
+    #ring-bot {
+        display: none;
+    }
+    .main-temp {
+        font-size: 30vmin;
+        left: 26%;
+        top: 19%;
+    }
+    .hilo {
+        font-size: 15vmin;
+        left: 21%;
+        top: 58%;
+    }
+}
+@media (max-height: 300px) and (min-height: 0px) {
+    #ring-top {
+        display: none;
+    }
+    #ring-bot {
+        display: none;
+    }
+    .main-temp {
+        font-size: 30vmin;
+        left: 26%;
+        top: 19%;
+    }
+    .hilo {
+        font-size: 15vmin;
+        left: 21%;
+        top: 58%;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 384px) and (min-height: 0px) and (max-height: 270px) {}
+
+@media (min-width: 0px) and (max-width: 384px) and (min-height: 271px) and (max-height: 540px) {}
+
+@media (min-width: 0px) and (max-width: 384px) and (min-height: 541px) and (max-height: 810px) {}
+
+@media (min-width: 0px) and (max-width: 384px) and (min-height: 811px) and (max-height: 1080px) {}
+
+@media (min-width: 385px) and (max-width: 768px) and (min-height: 0px) and (max-height: 270px) {}
+
+@media (min-width: 385px) and (max-width: 768px) and (min-height: 271px) and (max-height: 540px) {}
+
+@media (min-width: 385px) and (max-width: 768px) and (min-height: 541px) and (max-height: 810px) {}
+
+@media (min-width: 385px) and (max-width: 768px) and (min-height: 811px) and (max-height: 1080px) {}
+
+@media (min-width: 769px) and (max-width: 1152px) and (min-height: 0px) and (max-height: 270px) {}
+
+@media (min-width: 769px) and (max-width: 1152px) and (min-height: 271px) and (max-height: 540px) {}
+
+@media (min-width: 769px) and (max-width: 1152px) and (min-height: 541px) and (max-height: 810px) {}
+
+@media (min-width: 769px) and (max-width: 1152px) and (min-height: 811px) and (max-height: 1080px) {}
+
+@media (min-width: 1153px) and (max-width: 1536px) and (min-height: 0px) and (max-height: 270px) {}
+
+@media (min-width: 1153px) and (max-width: 1536px) and (min-height: 271px) and (max-height: 540px) {}
+
+@media (min-width: 1153px) and (max-width: 1536px) and (min-height: 541px) and (max-height: 810px) {}
+
+@media (min-width: 1153px) and (max-width: 1536px) and (min-height: 811px) and (max-height: 1080px) {}
+
+@media (min-width: 1537px) and (max-width: 1920px) and (min-height: 0px) and (max-height: 270px) {}
+
+@media (min-width: 1537px) and (max-width: 1920px) and (min-height: 271px) and (max-height: 540px) {}
+
+@media (min-width: 1537px) and (max-width: 1920px) and (min-height: 541px) and (max-height: 810px) {}
+
+@media (min-width: 1537px) and (max-width: 1920px) and (min-height: 811px) and (max-height: 1080px) {}
